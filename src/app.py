@@ -71,7 +71,7 @@ def regres(df, var, reg_type):
 # In[14]:
 
 
-states_data2 = pd.read_csv('state_data.csv')
+states_data2 = pd.read_csv('../state_data.csv')
 
 
 # In[15]:
@@ -83,7 +83,7 @@ df_usa = states_data2.groupby(['Date']).sum().reset_index()
 # In[16]:
 
 
-df_1 = pd.read_csv('norm_data')
+df_1 = pd.read_csv('../norm_data')
 with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
     counties = json.load(response)
 
